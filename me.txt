@@ -1,0 +1,33 @@
+PS D:\Assignments6th_sem\WAD\me> git config --global user.name "Vaishnavi Kanade"
+PS D:\Assignments6th_sem\WAD\me> git config --global user.email "vaishnavikanade2003@gmail.com"
+PS D:\Assignments6th_sem\WAD\me> git init
+Initialized empty Git repository in D:/Assignments6th_sem/WAD/me/.git/
+PS D:\Assignments6th_sem\WAD\me> git add .
+PS D:\Assignments6th_sem\WAD\me> git commit "me"
+error: pathspec 'me' did not match any file(s) known to git
+PS D:\Assignments6th_sem\WAD\me> git commit -m "me"
+[master (root-commit) 548aa0a] me
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+PS D:\Assignments6th_sem\WAD\me> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+PS D:\Assignments6th_sem\WAD\me> git branch -M main
+PS D:\Assignments6th_sem\WAD\me> git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS D:\Assignments6th_sem\WAD\me> git remote add origin https://github.com/VaishnaviKanade/repo.git
+PS D:\Assignments6th_sem\WAD\me> git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 362 bytes | 362.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/VaishnaviKanade/repo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\Assignments6th_sem\WAD\me> 
